@@ -140,7 +140,7 @@ class BeerRepository {
             }
         })
     }
-    
+
     fun sortByName() {
         beersLiveData.value = beersLiveData.value?.sortedBy { it.name }
     }
