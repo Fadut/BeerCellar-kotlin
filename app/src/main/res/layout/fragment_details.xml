@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="DetailsFragment"
+    android:background="#fadcc3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update or delete this beer"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edittext_updateBeerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edittext_updateBeerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Style"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edittext_updateBeerAbv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Abv"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edittext_updateBeerVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Volume"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edittext_updateBeerHowMany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="How many"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/button_updateBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update beer"
+        android:backgroundTint="@android:color/holo_green_dark"/>
+
+    <Button
+        android:id="@+id/button_deleteBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete beer"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/textview_detailsBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

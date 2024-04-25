@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LogInFragment">
+
+    <fragment
+        android:id="@+id/LogInFragment"
+        android:name="com.example.beer_cellar.LogInFragment"
+        android:label="Log in"
+        tools:layout="@layout/fragment_log_in">
+
+        <action
+            android:id="@+id/action_LogInFragment_to_MyBeersFragment"
+            app:destination="@id/MyBeersFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/MyBeersFragment"
+        android:name="com.example.beer_cellar.MyBeersFragment"
+        android:label="My beers"
+        tools:layout="@layout/fragment_my_beers">
+        <action
+            android:id="@+id/action_MyBeersFragment_to_CreateBeerFragment"
+            app:destination="@id/CreateBeerFragment" />
+        <action
+            android:id="@+id/action_MyBeersFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment" />
+        <action
+            android:id="@+id/action_MyBeersFragment_to_LogInFragment2"
+            app:destination="@id/LogInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailsFragment"
+        android:name="com.example.beer_cellar.DetailsFragment"
+        android:label="Beer details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_DetailsFragment_to_MyBeersFragment"
+            app:destination="@id/MyBeersFragment" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CreateBeerFragment"
+        android:name="com.example.beer_cellar.CreateBeerFragment"
+        android:label="Create a beer"
+        tools:layout="@layout/fragment_create_beer" >
+        <action
+            android:id="@+id/action_CreateBeerFragment_to_MyBeersFragment"
+            app:destination="@id/MyBeersFragment" />
+    </fragment>
+
+</navigation>

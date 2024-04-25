@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "753149590940",
+    "project_id": "fu-school-project",
+    "storage_bucket": "fu-school-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753149590940:android:274d0a23fa29fa872a1c59",
+        "android_client_info": {
+          "package_name": "com.example.beer_cellar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARkQQeZ1Y0EGYtjFfByBDSraYW2rBkb70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
