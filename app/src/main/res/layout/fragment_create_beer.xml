@@ -17,56 +17,71 @@
         android:layout_gravity="center"
         android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/edittext_createBeerName"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Name"
-        android:inputType="text"
-        android:maxLines="1"/>
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edittext_createBeerStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Style"
-        android:inputType="text"
-        android:maxLines="1"/>
+            <EditText
+                android:id="@+id/edittext_createBeerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"/>
 
-    <EditText
-        android:id="@+id/edittext_createBeerAbv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Abv"
-        android:inputType="text"
-        android:maxLines="1"/>
+            <EditText
+                android:id="@+id/edittext_createBeerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Style"
+                android:inputType="text"
+                android:maxLines="1"/>
 
-    <EditText
-        android:id="@+id/edittext_createBeerVolume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Volume"
-        android:inputType="text"
-        android:maxLines="1"/>
+            <EditText
+                android:id="@+id/edittext_createBeerAbv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Abv"
+                android:inputType="text"
+                android:maxLines="1"/>
 
-    <EditText
-        android:id="@+id/edittext_createBeerHowMany"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="How many"
-        android:inputType="text"
-        android:maxLines="1"/>
+            <EditText
+                android:id="@+id/edittext_createBeerVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Volume"
+                android:inputType="text"
+                android:maxLines="1"/>
 
-    <Button
-        android:id="@+id/button_createBeer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create"
-        android:backgroundTint="@color/black"/>
+            <EditText
+                android:id="@+id/edittext_createBeerHowMany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="How many"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+            <Button
+                android:id="@+id/button_createBeer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>

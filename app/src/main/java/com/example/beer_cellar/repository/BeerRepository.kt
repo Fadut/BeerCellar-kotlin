@@ -84,7 +84,9 @@ class BeerRepository {
                  if (response.isSuccessful) {
                      Log.d("APPLE", "Added: " + response.body())
                      updateMessageLiveData.postValue("Added: " + response.body())
-                     getBeers()
+                     //getBeers()
+                     // Should call getBeersByUser() to get beer of user, and not all beers
+                     getBeersByUser("123@213.com")
 
                  } else {
                      val message = response.code().toString() + " " + response.message()
